@@ -140,7 +140,6 @@ Suggests:
  libauthen-sasl-perl,
  libdbd-pg-perl,
  libfile-desktopentry-perl,
- libnet-smtps-perl,
  libterm-size-perl,
  libtimedate-perl,
  libyaml-syck-perl,

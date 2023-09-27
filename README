@@ -31,8 +31,7 @@ And now, in alphabetical order, the scripts:
 - bts: A command-line tool for accessing the Debian Bug Tracking System, both
   to send mails to control@bts.debian.org and to access the web pages and
   SOAP interface of the BTS. [www-browser, libauthen-sasl-perl,
-  libnet-smtps-perl, libsoap-lite-perl, liburi-perl, libwww-perl,
-  bsd-mailx | mailx]
+  libsoap-lite-perl, liburi-perl, libwww-perl, bsd-mailx | mailx]
 
 - build-rdeps: Searches for all packages that build-depend on a given package.
   [dctrl-tools, dose-extra, libdpkg-perl]

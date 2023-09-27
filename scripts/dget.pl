@@ -82,7 +82,7 @@ It is capable of downloading several packages at once.
    --path DIR      Check these directories in addition to the apt archive;
                    if DIR='' then clear current list (may be used multiple
                    times)
-   --insecure      Do not check SSL certificates when downloading
+   -k, --insecure  Do not check SSL certificates when downloading
    --no-cache      Disable server-side HTTP cache
    --no-conf       Don\'t read devscripts config files;
                    must be the first option given
@@ -445,7 +445,7 @@ GetOptions(
     "d|download-only"         => sub { $dget_unpack = 0 },
     "x|extract"               => sub { $dget_unpack = 1 },
     "u|allow-unauthenticated" => sub { $dget_verify = 0 },
-    "insecure"                => \$opt->{'insecure'},
+    "k|insecure"              => \$opt->{'insecure'},
     "no-cache"                => \$opt->{'no-cache'},
     "noconf|no-conf"          => \$opt->{'no-conf'},
     "path=s"                  => sub {
@@ -669,7 +669,7 @@ directories listed will be searched; hence, the above example could
 have been written as: "--path /srv/pbuilder/result --path
 /home/cb/UploadQueue".
 
-=item B<--insecure>
+=item B<-k>, B<--insecure>
 
 Allow SSL connections to untrusted hosts.
 
